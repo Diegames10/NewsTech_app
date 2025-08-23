@@ -10,8 +10,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 WORKDIR /app
 
 # Copie dependências primeiro (melhor cache)
-COPY login_app /app/login_app
-COPY login_app/requirements.txt /tmp/requirements.txt
+COPY PROJETO APP NEWSTECH/app/login_app
+COPY PROJETO APP NEWSTECH/requirements.txt /tmp/requirements.txt
 
 RUN pip install --no-cache-dir -r /tmp/requirements.txt
 
